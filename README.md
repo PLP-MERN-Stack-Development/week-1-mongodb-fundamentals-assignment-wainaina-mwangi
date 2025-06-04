@@ -1,47 +1,82 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19698087&assignment_repo_type=AssignmentRepo)
-# MongoDB Fundamentals Assignment
+# 📘 MongoDB Week 1 Assignment – Bookstore Database
 
-This assignment focuses on learning MongoDB fundamentals including setup, CRUD operations, advanced queries, aggregation pipelines, and indexing.
+This project demonstrates the use of MongoDB to design and query a bookstore database. The assignment includes basic CRUD operations, advanced queries, aggregation pipelines, and indexing for performance optimization.
 
-## Assignment Overview
+---
 
-You will:
-1. Set up a MongoDB database
-2. Perform basic CRUD operations
-3. Write advanced queries with filtering, projection, and sorting
-4. Create aggregation pipelines for data analysis
-5. Implement indexing for performance optimization
+## 📂 Project Structure
 
-## Getting Started
+```plaintext
+📁 mongodb-week1-yourname/
+├── insert_books.js           # Script to insert 10 book documents into the collection
+├── queries.js                # MongoDB queries for all tasks (CRUD, advanced, aggregation, indexing)
+├── README.md                 # This file – instructions and project summary
+├── compass_screenshot.png    # Screenshot showing the collection and data in MongoDB Compass
+🧪 What This Project Does
+Creates a MongoDB database named plp_bookstore
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install MongoDB locally or set up a MongoDB Atlas account
-4. Run the provided `insert_books.js` script to populate your database
-5. Complete the tasks in the assignment document
+Creates a collection named books
 
-## Files Included
+Inserts at least 10 sample book documents
 
-- `Week1-Assignment.md`: Detailed assignment instructions
-- `insert_books.js`: Script to populate your MongoDB database with sample book data
+Performs various queries, updates, and deletions
 
-## Requirements
+Demonstrates aggregation pipelines and indexing
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- MongoDB Shell (mongosh) or MongoDB Compass
+🛠️ How to Run This Project
+1. Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/YOUR-USERNAME/mongodb-week1-yourname.git
+cd mongodb-week1-yourname
+2. Insert Book Data
+Use the provided insert_books.js script to populate your MongoDB database with sample data:
 
-## Submission
+bash
+Copy
+Edit
+mongosh < insert_books.js
+This will:
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+Use the plp_bookstore database
 
-1. Complete all tasks in the assignment
-2. Add your `queries.js` file with all required MongoDB queries
-3. Include a screenshot of your MongoDB database
-4. Update the README.md with your specific setup instructions
+Insert 10 documents into the books collection
 
-## Resources
+3. Run MongoDB Queries
+Open the MongoDB shell (mongosh) or MongoDB Compass and copy-paste the queries from queries.js to test the following:
 
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [MongoDB University](https://university.mongodb.com/)
-- [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/) 
+Basic and advanced find queries
+
+Update and delete operations
+
+Aggregation pipelines
+
+Index creation and performance testing with .explain()
+
+📸 Screenshot of MongoDB Compass
+The following screenshot shows my books collection populated with data in MongoDB Compass:
+
+
+🧾 Summary of Work
+Feature	Description
+Database Name	plp_bookstore
+Collection Name	books
+Documents Inserted	10 sample book documents
+Script Used	insert_books.js
+Queries File	queries.js
+Screenshot File	compass_screenshot.png
+
+📌 Notes
+The data used for the books includes fields like title, author, genre, published_year, price, in_stock, pages, and publisher.
+
+Indexes were created on the title field and on the compound key (author, published_year) for performance.
+
+Pagination, sorting, projections, and aggregations were tested and verified.
+
+✅ Completed By
+Erastus Wainaina
+MongoDB Week 1 – PLP Data Layer Fundamentals
+Date: June 2025
+
+
